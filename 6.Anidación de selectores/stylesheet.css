@@ -1,0 +1,37 @@
+.button {
+  position: relative;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button::before {
+  content: "¡Hecho!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+button::after {
+  content: "Pasa por Encima";
+}
+
+.button:hover {
+  background-color: green;
+  color: white;
+}
+
+.button:hover::before {
+  opacity: 1;
+}
+
+.button:hover::after {
+  opacity: 0;
+}
