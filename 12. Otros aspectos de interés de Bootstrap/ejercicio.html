@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <title>Elementos de Interés en Bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- SECTION 1 -->
+      <section>
+        <div class="jumbotron">
+          <h1 class="display-3 pt-4">¡Bienvenidos!</h1>
+          <p class="lead">Este es un ejemplo de Jumbotron en Bootstrap.</p>
+          <p>Haz clic en el botón para abrir una ventana modal!</p>
+          <button
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#myModal"
+          >
+            Llamada a la Acción
+          </button>
+        </div>
+        <hr class="my-4" />
+        <div
+          class="modal fade"
+          id="myModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Ventana Modal
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>Este es el contenido de la ventana modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section>
+        <h3>Formulario de Contacto</h3>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" />
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="number" class="form-control" id="telefono" />
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </section>
+      <hr class="my-4" />
+      <!-- SECTION 3 -->
+      <section class="mb-4">
+        <div class="card">
+          <div class="card-header fs-4 bg-dark text-white">Joe Viloria</div>
+          <div class="card-body">
+            <h5 class="card-title">Perfil de Desarrollador</h5>
+            <p class="card-text">
+              Soy un apasionado desarrollador front-end en proceso de
+              aprendizaje. Estoy emocionado por explorar el mundo del diseño y
+              desarrollo web, y convertir ideas en interfaces atractivas y
+              funcionales. Con conocimientos en HTML, CSS y JavaScript, estoy
+              construyendo mi base para crear experiencias de usuario
+              excepcionales. Estoy comprometido con el aprendizaje continuo y el
+              crecimiento profesional, buscando oportunidades para mejorar mis
+              habilidades y explorar nuevas tecnologías. ¡Listo para embarcarme
+              en nuevos desafíos y contribuir en proyectos web inspiradores!
+            </p>
+          </div>
+          <div class="card-footer">joeviloria12@hotmail.com</div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
